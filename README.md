@@ -1,14 +1,16 @@
-                                                      **Customer Churn Predictor**
+                                                   #  Customer Churn Predictor
 
-** Project Overview**
-This project predicts whether a customer will leave (churn) a subscription service based on usage and account behavior.
+##  Project Overview
+This project predicts whether a customer will leave (churn) a subscription service based on usage patterns and account behavior.
 
-It helps businesses identify at-risk customers and improve retention strategies.
+It helps businesses identify at-risk customers in advance so they can improve retention and reduce revenue loss.
 
 ---
 
 ##  Problem Statement
-Telecom companies lose revenue when customers leave. This model predicts churn in advance so companies can take preventive actions.
+Telecom companies face revenue loss when customers discontinue services.
+
+This machine learning model predicts customer churn in advance, enabling companies to take preventive actions and improve retention strategies.
 
 ---
 
@@ -18,6 +20,7 @@ Telecom companies lose revenue when customers leave. This model predicts churn i
 - NumPy
 - Scikit-learn
 - Streamlit
+- Matplotlib
 
 ---
 
@@ -27,17 +30,24 @@ Kaggle Telecom Customer Churn Dataset
 ---
 
 ##  Workflow
-1. Data Cleaning
-2. Exploratory Data Analysis (EDA)
-3. Feature Engineering
-4. Model Training
-5. Model Evaluation
-6. Deployment using Streamlit
+1. Data Cleaning  
+2. Exploratory Data Analysis (EDA)  
+3. Feature Engineering  
+4. Model Training (Logistic Regression)  
+5. Model Evaluation (Confusion Matrix, Recall, Accuracy)  
+6. Deployment using Streamlit  
+
+---
+
+##  Model Evaluation
+- Confusion Matrix used to analyze predictions  
+- Focus on Recall to reduce false negatives  
+- Logistic Regression used for classification  
 
 ---
 
 ##  How to Run Project
 
+Install dependencies:
 ```bash
 pip install -r requirements.txt
-streamlit run app.py
